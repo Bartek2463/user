@@ -1,6 +1,8 @@
 package com.example.user;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository extends CrudRepository<Long,User> {
+@Repository
+public interface UserRepository extends CrudRepository<User,Long> {
 }
